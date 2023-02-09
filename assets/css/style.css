@@ -18,6 +18,19 @@ body{
     overflow-x: hidden;
 }
 
+.button{
+    display: inline-block;
+    background-color:#744AEC;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
 /*      HEADER        */
 
 header{
@@ -74,7 +87,7 @@ header{
 
 .banner{
     height:calc(100vh - 100px);
-    background-image:url('img/banner2.webp');
+    background-image:url('img/Images/banner.jpeg');
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -89,7 +102,7 @@ header{
 .banner .slide{
     width: 100vw;
     height: 100%;
-    display: inline-block;
+    display: block;
     background-color: rgba(0,0,0,0.6);
 }
 
@@ -110,6 +123,7 @@ header{
 
 .banner h1 span{
     color: #FED832;
+    margin-left: 100px;
 }
 
 .banner h2{
@@ -117,18 +131,6 @@ header{
     margin-top: 20px;
 }
 
-.banner a{
-    display: block;
-    background-color:#744AEC;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px 30px;
-    margin-top: 30px;
-    border-radius: 20px;
-}
 
 .banner .sliders_pointers{
     width: 100vw;
@@ -175,29 +177,208 @@ header{
 
 .default .section-desc{
     font-size: 12px;
-    color: #CCC;
+    color: #615e5e;
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
 .default .section-body{
     margin: auto;
-    max-width: 1140px;
-    
+    max-width: 1140px;  
 }
 
 .default.light{
     background-color: #F7F7F7;
 }
 
-.default.light .section-title{
+.default.light .section-title, .default.light .section-body{
     color: #000;
 }
 
 .default.dark{
-    background-color: #000;
+    background-color: #744AEC;
 }
 
-.default.dark .section-title{
+.default.dark .section-title, .default.dark .section-body{
     color: #FFF;
+}
+
+
+
+
+
+/*
+ CSS de áreas especificas
+*/
+
+
+/*
+     about us
+*/
+
+.section-aboutus{
+    display: flex;
+}
+
+.section-aboutus-left{
+    flex: 1;
+}
+
+.section-aboutus-left p{
+    font-size: 16px;
+    line-height: 25px;
+
+}
+
+.section-aboutus-right{
+    width: 540px;
+    text-align: center;
+}
+
+.section-aboutus-right img{
+    width: 290px;
+    box-shadow: 0px 5px 10px #333;
+    border-radius: 5px;
+}
+
+/*
+    segmentos
+*/
+
+.section-segmentos{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.segmento{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #978c44;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.segmento:first-child{
+    border-left: 1px solid #978c44;
+}
+
+.segmento img{
+    margin-top: 10px;
+    height: 90px;
+}
+
+.segmento h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+/*   section-products    */
+
+.section-products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.section-products-filters{
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.section-products-filters ul, .section-products-filters li{
+    list-style: none;
+}
+
+.section-products-filters li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-left: 1px solid #CCC;
+    color: #555;
+    cursor: pointer;
+}
+
+.section-products-filters li:hover{
+    color: #744AEC;
+    font-weight: bold;
+}
+
+.section-products-filters li:first-child{
+    border-left: 0;
+}
+
+/* photos  */
+
+.section-products-photos{
+    display: flex;
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-photos{
+    width: 280px; 
+}
+
+.photoarea{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.photoarea img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+}
+
+.photo-info{
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    width: inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    flex-direction: column;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.photoarea:hover .photo-info{
+    display: flex;
+}
+
+.photo-info p{
+    color: #FED832;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.photo-info h5{
+    margin-top: 20px;
+}
+
+.photo-info h1{
+    margin-top: 5px;
+}
+
+.section-desc-info{
+    font-size: 16px;
+    color: #5d5959;
+    margin-top: 20px;
+    font-weight: 600;
 }
