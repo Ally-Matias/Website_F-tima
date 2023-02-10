@@ -382,3 +382,81 @@ header{
     margin-top: 20px;
     font-weight: 600;
 }
+
+
+/*  Contato  */
+
+.section-body-contato{
+    margin: auto;
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background-color: #744AEC;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label{
+    color: #F7F7F7;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus{
+    border-radius: 16px;
+}
+
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form textarea:focus{
+    border-radius: 16px;
+}
+
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #F7F7F7;
+    color: #F7F7F7;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover{
+    background-color: #F7F7F7;
+    color: #744AEC;
+    border-radius: 16px;
+}
+
