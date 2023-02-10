@@ -417,6 +417,10 @@ form label{
     margin-bottom: 4px;
 }
 
+.name{
+    margin-top: 20px;
+}
+
 form input{
     padding: 15px;
     outline: none;
