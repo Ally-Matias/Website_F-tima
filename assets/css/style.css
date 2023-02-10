@@ -77,10 +77,12 @@ header{
     height: 100px;
     align-items: center;
     border-bottom:5px solid #744AEC;
+    transition: all 0.3s;
 }
 
-.menu li a:hover, .menu .active a{
+.menu li a:hover{
     border-bottom: 5px solid #FED832;
+    color: #FED832;
 }
 
 /*   Main - Banner   */
