@@ -456,7 +456,7 @@ form button{
     background-color: transparent;
     border: 2px solid #F7F7F7;
     color: #F7F7F7;
-    transition: all 1s;
+    transition: all 0.2s;
     margin-bottom: 20px;
 }
 
