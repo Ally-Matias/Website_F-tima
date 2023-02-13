@@ -44,7 +44,7 @@ header{
     height: 100px;
     margin: auto;
     display: flex;
-    align-items: center;
+    align-items: center;  
 }
 
 .logo{
@@ -78,6 +78,7 @@ header{
     align-items: center;
     border-bottom:5px solid #744AEC;
     transition: all 0.3s;
+    font-size: 14px;
 }
 
 .menu li a:hover{
@@ -88,7 +89,7 @@ header{
 /*   Main - Banner   */
 
 .banner{
-    height:calc(100vh - 100px);
+    height:calc(82vh - 100px);
     background-image:url('img/banner.jpeg');
     background-size: cover;
     background-position: center;
@@ -466,3 +467,112 @@ form button:hover{
     border-radius: 16px;
 }
 
+
+/*   section maps   */
+
+.section-map{
+    background-image: url('../css/img/maps.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-map-area{
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.map-info{
+    width: 50%;
+    padding: 30px;
+    background-color: #FFF;
+    color: #000;
+}
+
+.map-info-item{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.map-info-item-img{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #FED832;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.map-info-item-img img{
+    width: 20px;
+    height: auto;
+}
+
+/*   FOOTER   */
+
+footer{
+    background-color: #744AEC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-area{
+    display: flex;
+    width: 1140px;
+    max-width: 1140px;
+    height: 200px;
+    padding: 80px;
+    margin-left: 40px;
+    align-items: center;
+
+}
+
+.area{
+    flex: 1;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.text{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.widget_body_socials{
+    margin-left: 150px;
+}
+
+.widget_body_socials a{
+    padding: 8px;
+}
+
+.widget_title_text_icon_hinode{
+    color: #FED832;
+    margin-left: 32px;
+}
+
+.img_footer a{
+    margin-left: 42px;
+}
+
+.footer_copy{
+    border-top: 1px solid #978c44;
+    height: 40px;
+    line-height: 40px;
+    color: #e6dfdf;
+    font-size: 13.5px;
+    margin-top: 30px;
+}
+
+.footer_copy span{
+    margin-left: 590px;
+}
