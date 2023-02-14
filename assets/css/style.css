@@ -35,12 +35,16 @@ body{
 
 header{
     height: 100px;
+    max-width: 100%;
+    width: 1500px;
     background-color: #744AEC;
     color: #FFF;
+    position: fixed;
 }
 
 .header{
-    max-width: 1140px;
+    width: 1140px;
+    max-width: 100%;
     height: 100px;
     margin: auto;
     display: flex;
@@ -77,19 +81,19 @@ header{
     height: 100px;
     align-items: center;
     border-bottom:5px solid #744AEC;
-    transition: all 0.3s;
+    transition: all 0.2s ease; 
     font-size: 14px;
 }
 
+.menu li a.active,
 .menu li a:hover{
-    border-bottom: 5px solid #FED832;
-    color: #FED832;
+    border-bottom: 4px solid #FED832;
 }
 
 /*   Main - Banner   */
 
 .banner{
-    height:calc(82vh - 100px);
+    height:calc(100vh - 100px);
     background-image:url('img/banner.jpeg');
     background-size: cover;
     background-position: center;
@@ -116,6 +120,7 @@ header{
     align-items: center;
     justify-content: center;
     color: #FFF;
+    margin-top:40px ;
 }
 
 .banner h1{
@@ -187,7 +192,8 @@ header{
 
 .default .section-body{
     margin: auto;
-    max-width: 1140px;  
+    max-width: 100%; 
+    width: 1140px;
 }
 
 .default.light{
@@ -234,7 +240,7 @@ header{
 }
 
 .section-aboutus-right{
-    width: 540px;
+    width: 500px;
     text-align: center;
 }
 
@@ -292,6 +298,7 @@ header{
     border-radius: 30px;
     display: inline-block;
     padding: 0px 20px;
+    cursor:default;
 
 }
 
@@ -306,7 +313,8 @@ header{
     text-transform: uppercase;
     border-left: 1px solid #CCC;
     color: #555;
-    cursor: pointer;
+    cursor: default;
+    transition: all 0.3s;
 }
 
 .section-products-filters li:hover{
@@ -323,7 +331,7 @@ header{
 .section-products-photos{
     display: flex;
     width: 100vw;
-    max-width: 1140px;
+    max-width: 100%;
     margin-top: 20px;
     flex-wrap: wrap;
     justify-content: center;
@@ -391,7 +399,8 @@ header{
 
 .section-body-contato{
     margin: auto;
-    max-width: 1140px;
+    max-width: 100%;
+    width: 1140px;
     display: flex;
     justify-content: center;
 }
@@ -467,6 +476,41 @@ form button:hover{
     border-radius: 16px;
 }
 
+.text-RF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+    font-size: 18px;
+    color: #333;
+    font-family: sans-serif;
+    margin-top: -10px;
+    font-weight: 600;
+    cursor:default;
+  }
+
+.text-RF::after {
+    content: "";
+    display: block;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: 10px;
+}
+
+.text-RF::before {
+    content: "";
+    display: block;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-right: 10px;
+}
+
 
 /*   section maps   */
 
@@ -497,6 +541,7 @@ form button:hover{
     color: #555;
     margin-bottom: 10px;
     font-weight: 600;
+    cursor:default;
 }
 
 .map-info-item-img{
@@ -528,7 +573,7 @@ footer{
 .footer-area{
     display: flex;
     width: 1140px;
-    max-width: 1140px;
+    max-width: 100%;
     height: 200px;
     padding: 80px;
     margin-left: 40px;
@@ -545,6 +590,7 @@ footer{
 .text{
     font-size: 25px;
     font-weight: 600;
+    cursor:default;
 }
 
 .widget_body_socials{
@@ -557,11 +603,12 @@ footer{
 
 .widget_title_text_icon_hinode{
     color: #FED832;
-    margin-left: 32px;
+    margin-left: 35px;
 }
 
 .img_footer a{
     margin-left: 42px;
+    cursor:default;
 }
 
 .footer_copy{
@@ -571,8 +618,56 @@ footer{
     color: #e6dfdf;
     font-size: 13.5px;
     margin-top: 30px;
+    cursor:default;
 }
 
 .footer_copy span{
     margin-left: 590px;
+}
+
+
+
+
+/*   RESPONSIVIDADE   */
+
+@media(min-width:1441px){
+    header{
+        width: 2560px;
+    }
+}
+
+
+@media(max-width:1200px){
+    .logo{
+        margin-left: 30px;
+    }
+
+    .menu{
+        margin-right: 30px;
+    }
+
+    .section-aboutus-left{
+        margin-left: 30px;
+    }
+    
+    .section-aboutus-right{
+        width: 450px;
+    }
+
+    .footer_copy{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .footer_copy span{
+        margin-left: 470px;
+    }
+
+    .map-info{
+        margin-right: 80px;
+    }
+
+    .section-map-area{
+        max-width: 1020px;
+    }
 }
