@@ -11,6 +11,17 @@
     <link rel="icon" type="imagem/png" href="assets/css/img/Logo_Grupo_Hinode2.png" />
     <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menu-open").addEventListener("click", function(){
+                if(document.querySelector("nav").style.display == "flex"){
+                    document.querySelector("nav").style.display = "none";
+                }else{
+                    document.querySelector("nav").style.display = "flex";
+                }
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -19,6 +30,7 @@
                 <a href=""><img src="assets/css/img/Logo_Grupo_Hinode2.png" height="85" width="85"></a>
             </div>
             <div class="menu">
+                <img class="menu-open" src="assets/css/img/menu.png">
                 <nav>
                     <ul>
                         <li><a href="#inicio">Início</a></li>
@@ -41,6 +53,7 @@
                             Fátima Matias<br>
                             <span>Hinode</span>
                         </h1>
+                        <a href="assets/css/img/Cartão_virtual.png" class="button" download>Cartão de Contato Virtual</a>
                     </div>
                 </div>
                 <div class="slide"> <!-- atualização futura ( slide com js )  -->
