@@ -926,6 +926,20 @@ footer{
     .section-desc-info{
         font-size: 14px;
         margin: 5px;
+        text-align: center;
+    }
+
+    .photo{
+        width: 320px;
+    }
+
+    .photoarea{
+        width: 300px;
+        height: 200px;
+    }
+
+    .section-photos {
+        width: auto;
     }
 
     .section-map{
@@ -953,10 +967,6 @@ footer{
     .map-info-item-img img{
         width: 17px;
     }
-
-
-
-
         
     .footer-area{
         display: flex;
