@@ -325,6 +325,7 @@ header{
     align-items: center;
     justify-content: center;
     flex: 1;
+    cursor: pointer;
 }
 
 .section-products-filters li:hover{
@@ -362,7 +363,7 @@ header{
 
 .photo-info{
     position: absolute;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
     width: inherit;
     height: inherit;
     display: none;
@@ -727,12 +728,16 @@ footer{
     }
 
     .menu li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-weight: bold;
         height: 60px;
         font-size: 16px;
         margin-right: 150px;
         margin-left: 16px;
         padding-top: -10px;
+        text-align: center;
     }
 
     .section-aboutus{
@@ -832,6 +837,9 @@ footer{
     }
 
     .menu li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-weight: bold;
         height: 60px;
         font-size: 16px;
