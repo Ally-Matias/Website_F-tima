@@ -94,6 +94,7 @@ header{
     border-bottom: 4px solid #FED832;
 }
 
+
 /*   Main - Banner   */
 
 .banner{
@@ -328,6 +329,7 @@ header{
     cursor: pointer;
 }
 
+.section-products-filters li.active,
 .section-products-filters li:hover{
     background-color: #744AEC;
     color: #F7F7F7;
@@ -637,6 +639,38 @@ footer{
     margin-top: 30px;
     cursor:default;
 }
+
+
+/*  MENSAGEM ALERT    */
+
+#mensagem {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  #mensagem.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  #mensagem.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+
+/*   SCROLL FLUIDO   */
+
+
+html {
+    scroll-behavior: smooth;
+}
+  
+
 
 
 

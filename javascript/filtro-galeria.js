@@ -137,3 +137,27 @@ infantilBtn.addEventListener("click", () => {
     infantilArea.style.display = "block";
   });
 });
+
+
+
+//  BOTÕES ATIVOS 
+
+
+// Seleciona todos os botões
+const buttons = document.querySelectorAll('.section-products-filters li');
+
+// Adiciona um manipulador de eventos de clique a cada botão
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove a classe 'active' de todos os botões
+    buttons.forEach(button => {
+      button.classList.remove('active');
+    });
+    
+    // Adiciona a classe 'active' ao botão clicado
+    button.classList.add('active');
+  });
+});
+
+// Define o botão "PERFUMES" como ativo ao carregar a página
+document.querySelector('#perfumes-btn').classList.add('active');

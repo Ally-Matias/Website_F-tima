@@ -1,3 +1,11 @@
+function exibirMensagem(tipo, texto) {
+    var mensagem = document.getElementById('mensagem');
+    mensagem.innerHTML = texto;
+    mensagem.classList.add(tipo);
+  }
+  
+
+
 function enviarFormulario() {
     // Captura o formulário
     var formulario = document.getElementById('meu-formulario');
@@ -14,16 +22,16 @@ function enviarFormulario() {
     xhr.onload = function() {
       if (xhr.status === 200) {
         // Se a requisição for bem sucedida, faça alguma coisa aqui, como mostrar uma mensagem de sucesso
-        alert('Obrigado por entrar em contato!');
+        exibirMensagem('sucesso', 'Obrigado por entrar em contato!');
       } else {
         // Se houver um erro na requisição, faça alguma coisa aqui, como mostrar uma mensagem de erro
-        alert('Houve um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
+      exibirMensagem('erro', 'Houve um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
       }
     };
   
     // Define uma função a ser executada se houver um erro na requisição
     xhr.onerror = function() {
-      alert('Houve um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
+        exibirMensagem('erro', 'Houve um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
     };
   
     // Envia os dados do formulário

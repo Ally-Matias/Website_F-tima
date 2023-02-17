@@ -11,17 +11,6 @@
     <link rel="icon" type="imagem/png" href="assets/css/img/Logo_Grupo_Hinode2.png" />
     <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <script type="text/javascript">
-        window.onload = function(){
-            document.querySelector(".menu-open").addEventListener("click", function(){
-                if(document.querySelector("nav").style.display == "flex"){
-                    document.querySelector("nav").style.display = "none";
-                }else{
-                    document.querySelector("nav").style.display = "flex";
-                }
-            });
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -40,6 +29,7 @@
                         <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
+                <script src="javascript/menu-open.js"></script>
             </div>
         </div>
     </header>
@@ -54,26 +44,6 @@
                             <span>Hinode</span>
                         </h1>
                         <a href="assets/css/img/Cartão_virtual.png" class="button" download>Cartão de Contato Virtual</a>
-                    </div>
-                </div>
-                <div class="slide"> <!-- atualização futura ( slide com js )  -->
-                    <div class="slidearea">
-                        <h1>
-                            Design is About 2 <br>
-                            <span>Communication</span>
-                        </h1>
-                        <h2>Call Us: (88) 99971-2236</h2>
-                        <a href="">Get in touch!</a>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slidearea">
-                        <h1>
-                            Design is About 3 <br>
-                            <span>Communication</span>
-                        </h1>
-                        <h2>Call Us: (88) 99971-2236</h2>
-                        <a href="">Get in touch!</a>
                     </div>
                 </div>
             </div>
@@ -138,7 +108,7 @@
                 <div class="section-products">
                     <div class="section-products-filters">
                         <ul>
-                            <li id="perfumes-btn">PERFUMES</li>
+                            <li id="perfumes-btn" class="active">PERFUMES</li>
                             <li id="cosmeticos-btn">COSMÉTICOS</li>
                             <li id="maquiagens-btn">MAQUIAGENS</li>
                             <li id="higiene-btn">HIGIENE PESSOAL</li>
@@ -981,7 +951,7 @@
                     </div>
                 </div>
             </div>
-            <script src="script.js"></script>
+            <script src="javascript/filtro-galeria.js"></script>
         </section>
         <div id="contato"></div>
         <section class="default light">
@@ -998,9 +968,11 @@
                         <input type="text" name="phone" placeholder="Digite seu telefone" required>
                         <label>Mensagem</label>
                         <textarea name="message" cols="30" rows="15" placeholder="Digite sua mensagem aqui!" required></textarea>
-                        <button type="submit">Enviar</button>
+                        <button type="submit">Enviar</button>                        
+                        
+                        <div id="mensagem"></div>
                     </form> 
-                    <script src="form.js"></script>
+                    <script src="javascript/formulario-contato.js"></script>
                 </div>
             </div>
         </section>
@@ -1067,5 +1039,6 @@
             </div>
         </div>
     </footer>
+    <script src="javascript/active-menu.js"></script>
 </body>
 </html>
