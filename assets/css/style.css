@@ -417,6 +417,8 @@ header{
 /*  Contato  */
 
 .section-body-contato{
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
     max-width: 100%;
     width: 1140px;
@@ -433,8 +435,52 @@ header{
     background-color: #744AEC;
     width: 500px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin: 25px;
 }
 
+
+#redes-sociais{
+    background-color: #FFFFFF;
+}
+
+.titulo-contato-socials{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 25px;
+    margin-top: -20px;
+    font-size: 17px;
+}
+
+.titulo-contato-email{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+    font-size: 17px;
+    color: #F7F7F7;
+}
+
+.contato_socials img{
+    margin: 15px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.prg1{
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.prg2{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
 
 section form{
     display: flex;
@@ -644,7 +690,8 @@ footer{
 /*  MENSAGEM ALERT    */
 
 #mensagem {
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     padding: 10px;
     font-size: 17px;
     border-radius: 7px;
@@ -711,6 +758,13 @@ html {
 
     .section-map-area{
         max-width: 1020px;
+    }
+}
+
+@media(max-width:1099px){
+    .titulo-contato-socials{
+        margin: 25px;
+        margin-top: 20px;
     }
 }
 
