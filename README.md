@@ -1,6 +1,6 @@
 # Website_de_Apresentacao
 
-Em produção...
+Em Produção...
 
 O projeto consiste em: um website que desenvolvi para a minha mãe. O site tem como objetivo fornecer uma visão geral da trajetória profissional e pessoal dela, assim como apresentar os principais produtos da Hinode, empresa em que ela trabalha, e disponibilizar informações de contato. 
 
