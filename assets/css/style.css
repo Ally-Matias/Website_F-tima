@@ -347,14 +347,31 @@ header{
     justify-content: center;
 }
 
+/*
+.photo{
+        width: 320px;
+    }
+
+    .photoarea{
+        width: 300px;
+        height: 200px;
+    }
+
+    .section-photos {
+        width: auto;
+    }
+*/
+
+
+
 .section-photos{
-    width: 280px; 
+    width: auto; 
 }
 
 .photoarea{
     margin: 10px;
-    width: 260px;
-    height: 160px;
+    width: 280px;
+    height: 230px;
 }
 
 .photoarea img{
@@ -1025,19 +1042,6 @@ html {
         font-size: 14px;
         margin: 5px;
         text-align: center;
-    }
-
-    .photo{
-        width: 320px;
-    }
-
-    .photoarea{
-        width: 300px;
-        height: 200px;
-    }
-
-    .section-photos {
-        width: auto;
     }
 
     .section-map{
