@@ -20,5 +20,5 @@ Link : <https://fatimahinode.vercel.app/>
 ---
 
 <p align="center">
-  <img src="Google-Analytics-P%C3%A1gina-inicial.png" />
+  <img src="Google-Analytics.png"/>
 </p>
