@@ -5,4 +5,20 @@ O projeto consiste em: um website que desenvolvi para a minha mãe. O site tem c
 Ao contrário de outros projetos que criei apenas para meu portfólio, decidi criar algo mais útil e real desta vez. Utilizei JavaScript, HTML e CSS puro, com conceitos de flexbox para garantir uma melhor organização e disposição dos elementos na página. O projeto é totalmente responsivo, o que significa que foi desenvolvido para ser visualizado em diferentes dispositivos, como smartphones e tablets. Acredito que o resultado final ficou muito elegante e profissional, com uma aparência visual limpa e moderna.
 
 
-Link : https://fatimahinode.vercel.app/
+Link : <https://fatimahinode.vercel.app/> 
+
+<br>
+
+---
+
+<br>
+
+`EDIT: Após um ano do desenvolvimento do site, e hospedado em uma plataforma de hospedagem gratuita e sem pagar por um domínio, compartilho algumas métricas obtidas diretamente do Google Analytics: `
+
+<br>
+
+---
+
+<p align="center">
+  <img src="Google-Analytics-P%C3%A1gina-inicial.png" />
+</p>
